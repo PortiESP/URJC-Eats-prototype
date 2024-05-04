@@ -1,0 +1,97 @@
+@import "../identity";
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h1{
+        border-bottom: 2px solid $primary;
+    }
+
+    h2{
+        border-bottom: 1px solid #0002;
+    }
+
+    hr{
+        border: none;
+        border-bottom: 1px solid #0002;
+    }
+
+    .details{
+        p, span{
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0008;
+        }
+    }
+
+    .stats{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .stat{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+
+            span{
+                font-size: 1rem;
+                font-weight: 700;
+                color: #0008;
+            }
+        }
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            font-weight: 600;
+
+            ol{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #0001;
+
+                span{
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: #0008;
+                }
+            }
+        }
+    }
+
+    button{
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: $primary;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:nth-of-type(1){
+            background: none;
+            color: $primary;
+            border: 2px solid $primary;
+
+            &:hover{
+                background-color: lighten($primary, 50%);
+            }
+        }
+
+        &:hover{
+            background-color: darken($primary, 10%);
+        }
+    }
+}

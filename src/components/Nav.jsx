@@ -9,7 +9,7 @@ export default function Nav({setScene}) {
             <nav>
                 <div className={scss.icon}><img src={icon1} alt="Icon" onClick={()=> setScene("cart")} /></div>
                 <div className={scss.icon}><img src={icon2} alt="Icon" onClick={()=> setScene("mainMenu")} /></div>
-                <div className={scss.icon}><img src={icon3} alt="Icon" onClick={()=> setScene("mainMenu")} /></div>
+                <div className={scss.icon}><img src={icon3} alt="Icon" onClick={()=> setScene("user")} /></div>
             </nav>
         </div>
     );

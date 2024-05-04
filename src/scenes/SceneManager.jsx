@@ -5,13 +5,17 @@ import ProductDetail from "@/scenes/ProductDetail"
 import Nav from "@/components/Nav"
 import Cart from "@/scenes/Cart"
 import Delivery from "@/scenes/Cart/Delivery"
+import User from "@/scenes/User"
+import FAQs from "@/scenes/User/FAQs"
 
 const scenes = {
     mainMenu: MainMenu,
     login: LogIn,
     productDetail: ProductDetail,
     cart: Cart,
-    delivery: Delivery
+    delivery: Delivery,
+    user: User,
+    faqs: FAQs
 }
 
 export default function SceneManager() {
