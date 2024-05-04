@@ -8,6 +8,16 @@ const users = [
         email: 'admin@urjc.es',
         password: 'admin',
         nextScene: 'adminMenu'
+    },
+    {
+        email: 't@urjc.es',
+        password: 't',
+        nextScene: 'adminMenu'
+    },
+    {
+        email: 'alumno@urjc.es',
+        password: 'alumno',
+        nextScene: 'mainMenu'
     }
 ]
 
@@ -23,14 +33,13 @@ export default function LogIn({setScene}){
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const user = users.find(user => user.username === email && user.password === password);
+        const user = users.find(user => (user.email === email || user.email.split("@")[0] === email) && user.password === password);
 
         if(user){
             setScene(user.nextScene);
         } else {
-            // Focus
-            $email.current.focus();
             setError(true);
+            $email.current.focus();
         }
     }
 

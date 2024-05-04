@@ -1,9 +1,9 @@
 import { useState } from "react"
-import MainScene from "@/scenes/MainMenu"
 import LogIn from "@/scenes/LogIn"
+import MainMenu from "@/scenes/MainMenu"
 
 const scenes = {
-    main: MainScene,
+    mainMenu: MainMenu,
     login: LogIn
 }
 

@@ -8,7 +8,7 @@ export default function useAlert({setShow, show, ...props}){
             <div className={scss.alert}>
                 <h3>{props.title}</h3>
                 <p>{props.message}</p>
-                <button onClick={() => setShow(false)}>Cerrar</button>
+                <button onClick={() => setShow(false)} autoFocus>Cerrar</button>
             </div>
         </div>}
     </>)
