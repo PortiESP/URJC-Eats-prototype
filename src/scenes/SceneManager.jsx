@@ -1,13 +1,19 @@
 import { useState } from "react"
 import MainScene from "@/scenes/MainMenu"
+import LogIn from "@/scenes/LogIn"
 
 const scenes = {
-    main: MainScene
+    main: MainScene,
+    login: LogIn
 }
 
 export default function SceneManager() {
-    const [scene, setScene] = useState('main')
+    const [scene, setScene] = useState('login')
 
     const Scene = scenes[scene]
-    return <Scene setScene={setScene} />
+    return (
+        <div className="scene-wrapper">
+            <Scene setScene={setScene} />
+        </div>
+    )
 }

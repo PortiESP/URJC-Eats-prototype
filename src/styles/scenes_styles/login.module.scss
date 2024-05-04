@@ -1,0 +1,114 @@
+@import "../identity";
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    
+    .title{
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #000;
+        width: 100%;
+        height: 40px;
+        
+        h1{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    }
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        .formGroup{
+
+            display: flex;
+            flex-direction: column;
+
+            margin-bottom: 10px;
+
+            label{
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+                font-weight: 500;
+                pointer-events: none;
+            }
+
+            input{
+                width: 100%;
+                padding: 0.5rem;
+                font-size: 1rem;
+                background-color: $secondary;
+                border: none;
+                border-radius: 5px;
+
+                &:focus{
+                    outline: none;
+                }
+
+                &:hover{
+                    filter: brightness(95%);
+                }
+            }
+
+            button{
+                width: 100%;
+                padding: 0.5rem;
+                font-size: 1rem;
+                background-color: $primary;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover{
+                    filter: brightness(90%);
+                }
+
+                &:active{
+                    filter: brightness(80%);
+                }
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+        }
+    }
+    .lang{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
+        select{
+            padding: 0.5rem;
+            font-size: 1rem;
+            background-color: $secondary;
+            border: none;
+            border-radius: 5px;
+            font-style: italic;
+
+            option{
+                font-style: italic;
+                padding: 4px 6px;
+            }
+        }
+    }
+
+    .hint{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        color: #000;
+        text-align: center;
+        font-style: italic;
+        color: #0008;
+    }
+}

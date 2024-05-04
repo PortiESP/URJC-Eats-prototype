@@ -11,10 +11,10 @@ function App() {
       </div>
       <div className="app-mid-container">
         <div className='app-frame-container'>
+          <img src={iphoneFrame} className='app-frame-image'/>
           <div className='app-frame-content'>
             <SceneManager />
           </div>
-          <img src={iphoneFrame} className='app-frame-image'/>
         </div>
       </div>
       <div className="app-bottom-container">
