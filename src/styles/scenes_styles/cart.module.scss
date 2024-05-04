@@ -1,0 +1,75 @@
+@import "../identity";
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+
+    .items{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1{
+        border-bottom: 2px solid $primary;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #0008;
+    }
+
+    & > button{
+        width: 100%;
+        padding: 10px;
+        background: $primary;
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    
+        &:hover{
+            background: darken($primary, 10%);
+        }
+    }
+}
+
+.cart_item{
+    display: flex;
+    gap: 10px;
+    background: #0001;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 5px;
+
+    .image{
+        width: 50px;
+        height: 50px;
+        background: #0003;
+        border-radius: 5px;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h3{
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        span{
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #0005;
+        }
+    }
+}

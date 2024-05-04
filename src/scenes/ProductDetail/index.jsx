@@ -2,6 +2,14 @@ import scss from '@/styles/scenes_styles/product_detail.module.scss';
 
 
 export default function ProductDetail({setScene}) {
+
+    const handleCart = () => {
+        const cart = JSON.parse(localStorage.getItem('cart') || "[]");
+        cart.push({name: 'Product Title', price: 'Product Price'});
+        localStorage.setItem('cart', JSON.stringify(cart));
+        setScene('mainMenu');
+    }
+
     return (
         <div className={scss.wrapper}>
             <div className={scss.details_container}>
@@ -22,7 +30,7 @@ export default function ProductDetail({setScene}) {
                     <p>Precio: Product Price</p>
                 </div>
             </div>
-            <button onClick={() => setScene('mainMenu')}>Añadir al carrito</button>
+            <button onClick={handleCart}>Añadir al carrito</button>
         </div>
     )
 }

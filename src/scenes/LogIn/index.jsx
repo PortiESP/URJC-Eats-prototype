@@ -1,4 +1,3 @@
-import Alert from '@/components/Alert';
 import scss from '@/styles/scenes_styles/login.module.scss';
 import { useState } from 'react';
 import { useRef } from 'react';
@@ -45,7 +44,6 @@ export default function LogIn({setScene}){
 
     return (
         <div className={scss.wrapper}>
-            <Alert title="Error" message="Usuario o contraseña incorrectos" show={error} setShow={setError}/>
             <div className={scss.title}>
                 <h1>Inicio de Sesión</h1>
             </div>
@@ -59,6 +57,7 @@ export default function LogIn({setScene}){
                     <input type="password" name="password" id="password" value={password} onChange={e => setPassword(e.target.value)} ref={$password}/>
                 </div>
                 <div className={scss.formGroup} onClick={handleSubmit}>
+                    {error && <span className={scss.error}>{error && 'Usuario o contraseña incorrectos'}</span>}
                     <button type="submit">Acceder</button>
                 </div>
             </form>

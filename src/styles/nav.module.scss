@@ -1,0 +1,50 @@
+@import "identity";
+
+.wrapper{
+    height: 50px;
+    width: 100%;
+    background: $primary;
+    position: relative;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        width: 100%;
+        height: 100%;
+        color: #eee;
+
+        
+        .icon{
+            cursor: pointer;
+            width: 22px;
+            height: 22px;
+            position: relative;
+            transform: scale(1);
+            transition: all .1s ease-in-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                position: relative;
+            }
+
+            &:nth-of-type(2){
+                width: 50px;
+                height: 50px;
+                background: #f7f7f7;
+                padding: 10px;
+                border-radius: 50%;
+                position: relative;
+                bottom: 10px;
+            }
+
+        }
+    }
+}

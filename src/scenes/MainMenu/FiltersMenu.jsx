@@ -15,7 +15,7 @@ export default function FiltersMenu({setShowFiltersMenu}){
                 <input className={scss.input_number} placeholder="99"/>
             </div>
             <div className={[scss.input_group, scss.intolerances].join(" ")}>
-                <label>Intolerancia a</label>
+                <label>Intolerancia a:</label>
                 <div className={scss.ck_list}>
                     <div className={scss.ck_item}>
                         <input type="checkbox" id="gluten"/>
@@ -37,7 +37,6 @@ export default function FiltersMenu({setShowFiltersMenu}){
             </div>
         </div>
         <button onClick={()=>setShowFiltersMenu(false)}>Aplicar</button>
-        <span onClick={()=>setShowFiltersMenu(false)}>Cerrar</span>
     </div>
     )
 }

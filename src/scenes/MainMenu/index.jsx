@@ -2,6 +2,7 @@ import scss from '@/styles/scenes_styles/main_menu.module.scss';
 import Card from './Card';
 import { useState } from 'react';
 import FiltersMenu from './FiltersMenu';
+import Nav from '@/components/Nav';
 
 const cards = [
     {
@@ -101,16 +102,16 @@ export default function MainMenu({setScene}){
                         <button>Ir</button>
                     </search>
                     <button onClick={() => setShowFilters(!showFilters)} className={scss.button_filters}>Filtros</button>
+                    {
+                        showFilters &&
+                        <FiltersMenu setShowFiltersMenu={setShowFilters}/>
+                    }
                     
                 </div>
                 <div className={scss.results}>
                     {cards.map((card, index) => <Card key={index} title={card.title} content={card.description} image={card.image} footer={card.footer} setScene={setScene} />)}
                 </div>
             </div>
-            {
-                showFilters &&
-                <FiltersMenu setShowFiltersMenu={setShowFilters}/>
-            }
         </div>
     )
 }
