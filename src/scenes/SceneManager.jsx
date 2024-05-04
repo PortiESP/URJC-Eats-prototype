@@ -23,7 +23,7 @@ const scenes = {
 }
 
 export default function SceneManager() {
-    const [scene, setScene] = useState('pasMenu')
+    const [scene, setScene] = useState('login')
 
     const Scene = scenes[scene]
     return (<div className="scene-wrapper">

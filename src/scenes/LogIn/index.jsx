@@ -2,6 +2,8 @@ import scss from '@/styles/scenes_styles/login.module.scss';
 import { useState } from 'react';
 import { useRef } from 'react';
 
+import urjc_eats_logo from '@/assets/urjc_eats.png';
+
 const users = [
     {
         email: 'admin@urjc.es',
@@ -45,6 +47,9 @@ export default function LogIn({setScene}){
     return (
         <div className={scss.wrapper}>
             <div className={scss.title}>
+                <div className={scss.logo}>
+                    <img src={urjc_eats_logo} alt="URJCE Logo" />
+                </div>
                 <h1>Inicio de Sesión</h1>
             </div>
             <form className={scss.form}>
