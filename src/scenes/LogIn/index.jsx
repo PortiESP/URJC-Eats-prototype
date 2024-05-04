@@ -9,9 +9,9 @@ const users = [
         nextScene: 'adminMenu'
     },
     {
-        email: 't@urjc.es',
-        password: 't',
-        nextScene: 'adminMenu'
+        email: 'pas@urjc.es',
+        password: 'pas',
+        nextScene: 'pasMenu'
     },
     {
         email: 'alumno@urjc.es',

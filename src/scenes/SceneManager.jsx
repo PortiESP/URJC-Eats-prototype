@@ -8,6 +8,7 @@ import Delivery from "@/scenes/Cart/Delivery"
 import User from "@/scenes/User"
 import FAQs from "@/scenes/User/FAQs"
 import Admin from "@/scenes/Admin"
+import PAS from "./PAS"
 
 const scenes = {
     mainMenu: MainMenu,
@@ -17,18 +18,19 @@ const scenes = {
     delivery: Delivery,
     user: User,
     faqs: FAQs,
-    adminMenu: Admin
+    adminMenu: Admin,
+    pasMenu: PAS
 }
 
 export default function SceneManager() {
-    const [scene, setScene] = useState('adminMenu')
+    const [scene, setScene] = useState('pasMenu')
 
     const Scene = scenes[scene]
     return (<div className="scene-wrapper">
         <div className="scene-content">
             <Scene setScene={setScene} />
         </div>
-        {   scene !== 'login' && scene !== "adminMenu" &&
+        {   scene !== 'login' && scene !== "adminMenu" && scene !== "pasMenu" &&
             <Nav setScene={setScene} />
         }
     </div>
