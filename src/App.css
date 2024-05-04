@@ -162,10 +162,6 @@
     .app-wrapper{
         .app-mid-container{
 
-            aside{
-                display: none;
-            }
-
             .app-frame-container{
                 .app-frame-content{
                     width: 310px;
