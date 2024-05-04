@@ -1,0 +1,160 @@
+@import "../identity";
+
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    background: #000b;
+
+    color: #eee;
+
+    .filters{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff4;
+
+        .input_group{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            color: #eee;
+    
+            label{
+                font-size: 18px;
+                font-weight: 500;
+                color: #eee;
+                flex:1;
+            }
+
+            span{
+                color: #eee;
+                padding: 8px;
+                font-weight: 900;
+            }
+    
+            .input_number{
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+                font-size: 16px;
+                padding: 6px 10px;
+                background: $secondary;
+                color: #eee;
+                border: 1px solid #eee;
+                outline: none;
+            }
+
+            input{
+                width: 50%;
+                height: 30px;
+                border-radius: 5px;
+                font-size: 16px;
+                padding: 6px 10px;
+                background: $secondary;
+                color: #000;
+                border: 1px solid #eee;
+                outline: none;
+            }
+
+            .ck_list{
+                padding-top: 6px;
+                display: flex;
+                background: none;
+                gap: 10px;
+                flex-wrap: wrap;
+
+                align-items: flex-start;
+
+                .ck_item{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    color: #eee;
+                    font-size: 14px;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    background: $secondary;
+                    cursor: pointer;
+
+                    &:hover label{
+                        box-sizing: border-box;
+                        outline: 2px solid $primary;
+                    }
+
+                    &:active label{
+                        background: $primary;
+                        color: #eee;
+                    }
+
+                    input{
+                        display: none;
+                    }
+
+                    label{
+                        display: inline-block;
+                        border-radius: 5px;
+                        background: $secondary;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: none;
+                        color: black;
+                        font-size: 16px;
+                        padding: 10px;
+                    }
+
+                    input:checked + label{
+                        background: $primary;
+                        color: #eee;
+                    }
+
+                }
+
+            }
+    
+        }
+
+        .intolerances{
+            flex-direction: column;
+        }
+    }
+
+    button{
+        width: 100%;
+        height: 40px;
+        font-weight: 600;
+        border-radius: 5px;
+        background: $primary;
+        color: #eee;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+
+        &:hover{
+            filter: brightness(1.1);
+            border: none;
+        }
+    }
+
+        span{
+            font-size: 18px;
+            font-weight: 500;
+            color: #eee8;
+            text-decoration: underline;
+        }
+
+}

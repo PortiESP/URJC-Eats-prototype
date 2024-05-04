@@ -1,0 +1,81 @@
+@import "../identity";
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+
+    h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .details_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 10px;
+        overflow: scroll;
+
+        // Disables the scrollbar
+        scrollbar-width: none;
+
+        h2{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .image{
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+        }
+
+        .details{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            border-radius: 10px;
+
+            .hint_title{
+                font-size: 18px;
+                font-weight: 600;
+                text-decoration: underline;
+            }
+
+        }
+
+    }
+
+    button{
+        width: 100%;
+        height: 50px;
+        background-color: $primary;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 20px;
+
+        &:hover{
+            filter: brightness(1.1);
+        }
+    }
+}
