@@ -30,6 +30,7 @@ export default function ProductDetail({setScene}) {
                     <p>Precio: Product Price</p>
                 </div>
             </div>
+            <span className={scss.availability}>Disponibilidad: 99</span>
             <button onClick={handleCart}>Añadir al carrito</button>
         </div>
     )
