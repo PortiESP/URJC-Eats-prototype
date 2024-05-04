@@ -5,8 +5,7 @@ export default function Cart({setScene}) {
     const cart = JSON.parse(localStorage.getItem('cart') || "[]");
 
     const handlePay = () => {
-        localStorage.setItem('cart', JSON.stringify([]));
-        setScene("mainMenu");
+        setScene("delivery");
     }
 
     return (
@@ -21,7 +20,7 @@ export default function Cart({setScene}) {
                 <h3>Carrito vacío</h3>
             }
             </div>
-            <button onClick={handlePay} disabled={!cart.length}>Pagar</button>
+            <button onClick={handlePay} disabled={!cart.length}>Realizar pedido</button>
         </div>
     )
 }
