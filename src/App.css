@@ -39,15 +39,15 @@
             position: relative;
             
             .app-frame-content{
-                width: 305px;
-                height: 650px;
+                width: 34vh;
+                height: 72vh;
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: relative;
                 overflow: hidden;
-                border-radius: 40px;
+                border-radius: 35px;
 
                 .scene-wrapper{
                     display: flex;
@@ -83,6 +83,7 @@
                 height: 100%;
                 object-fit: contain;
                 position: absolute;
+                pointer-events: none;
             }
         }
     }
