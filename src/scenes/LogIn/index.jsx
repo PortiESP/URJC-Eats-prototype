@@ -1,26 +1,10 @@
 import scss from '@/styles/scenes_styles/login.module.scss';
 import { useState } from 'react';
 import { useRef } from 'react';
+import users from '@/data/users';
 
 import urjc_eats_logo from '@/assets/urjc_eats.png';
 
-const users = [
-    {
-        email: 'admin@urjc.es',
-        password: 'admin',
-        nextScene: 'adminMenu'
-    },
-    {
-        email: 'pas@urjc.es',
-        password: 'pas',
-        nextScene: 'pasMenu'
-    },
-    {
-        email: 'alumno@urjc.es',
-        password: 'alumno',
-        nextScene: 'mainMenu'
-    }
-]
 
 export default function LogIn({setScene}){
 

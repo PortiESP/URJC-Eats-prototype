@@ -22,8 +22,7 @@ const scenes = {
     pasMenu: PAS
 }
 
-export default function SceneManager() {
-    const [scene, setScene] = useState('login')
+export default function SceneManager({ scene, setScene }) {
 
     const Scene = scenes[scene]
     return (<div className="scene-wrapper">
