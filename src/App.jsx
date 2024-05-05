@@ -30,7 +30,6 @@ function App() {
     <div className="app-wrapper">
       <div className="app-top-container">
         <h1>URJC <span>Eats</span></h1>
-        <span>Prototype-V1</span>
       </div>
       <div className="app-mid-container">
         <aside className="asideL">
@@ -48,7 +47,7 @@ function App() {
       </div>
       <div className="app-bottom-container">
         <img src={logo1} alt="MadridDevLogo"  width={150}/>
-        <span>© 2021 MadridDev</span>
+        <span>© 2024 MadridDev</span>
       </div>
 
     </div>
