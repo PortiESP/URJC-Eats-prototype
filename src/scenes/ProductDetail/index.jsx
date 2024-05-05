@@ -5,7 +5,7 @@ export default function ProductDetail({setScene}) {
 
     const handleCart = () => {
         const cart = JSON.parse(localStorage.getItem('cart') || "[]");
-        cart.push({name: 'Product Title', price: 'Product Price'});
+        cart.push({name: 'Macarrones con tomate', price: '17'});
         localStorage.setItem('cart', JSON.stringify(cart));
         setScene('mainMenu');
     }

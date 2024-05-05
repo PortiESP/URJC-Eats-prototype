@@ -97,10 +97,19 @@
             
             .label{
                 font-size: 0.6rem;
-                background: #0a0a;
                 padding: 2px 4px;
                 border-radius: 4px;
                 color: #fffd;
+                
+                &.Pagado{
+                    background: #0a0a;
+                }
+                &.Anulado{
+                    background: #a00a;
+                }
+                &.Entregado{
+                    background: rgba(0, 45, 128, 0.667);
+                }
             }
         }
 

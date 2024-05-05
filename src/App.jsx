@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 
 function App() {
 
-  const [scene, setScene] = useState('user')
+  const [scene, setScene] = useState('cart')
   
   useEffect(() => {
     const setVH = () => {

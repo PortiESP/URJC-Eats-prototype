@@ -15,19 +15,19 @@ export default function User({ setScene }) {
                 <h2>Stats</h2>
                 <div className={scss.stat}>
                     <span>Orders</span>
-                    <span>0</span>
+                    <span>7</span>
                 </div>
                 <div className={scss.stat}>
                     <span>Gastos del último mes</span>
-                    <span>0</span>
+                    <span>67€</span>
                 </div>
                 <div className={scss.stat}>
                     <span>Platos valorados</span>
-                    <span>0</span>
+                    <span>3</span>
                 </div>
                 <div className={scss.stat}>
                     <span>Platos donados</span>
-                    <span>0</span>
+                    <span>2</span>
                 </div>
             </div>
             <hr />

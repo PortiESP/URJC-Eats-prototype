@@ -30,14 +30,16 @@ export default function Delivery({setScene}) {
                     <div className={scss.items}>
                         <span>Productos</span>
                         <ul>
-                            <li>Producto 1</li>
-                            <li>Producto 2</li>
-                            <li>Producto 3</li>
+                            <li>Primer plato: Macarrones con tomate</li>
+                            <li>Segundo plato: Hamburguesa </li>
+                            <li>Potre: Helado de vainilla</li>
+                            <li>Bebida: Cocacola</li>
+                            <li>Pan: Sí</li>
                         </ul>
                     </div>
                     <div className={scss.total}>
                         <span>Total</span>
-                        <span>0€</span>
+                        <span>7.95€</span>
                     </div>
                 </div>
                 <div className={scss.input_group}>
