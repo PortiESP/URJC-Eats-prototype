@@ -59,6 +59,8 @@ export default function LogIn({setScene}){
             <div className={scss.hint}>
                 <p>¿No tienes cuenta?</p>
                 <p>Contacta con un administrador</p>
+                <br/>
+                <p>Cumplimos con la Ley Orgánica 15/1999 y Ley Orgánica 3/2018</p>
             </div>
         </div>
     )

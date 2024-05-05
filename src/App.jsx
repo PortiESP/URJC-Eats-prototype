@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 
 function App() {
 
-  const [scene, setScene] = useState('mainMenu')
+  const [scene, setScene] = useState('user')
   
   useEffect(() => {
     const setVH = () => {

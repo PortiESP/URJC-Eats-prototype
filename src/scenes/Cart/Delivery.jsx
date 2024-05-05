@@ -16,7 +16,7 @@ export default function Delivery({setScene}) {
                     <input type="date" id="date" />
                 </div>
                 <div className={scss.input_location}>
-                    <label htmlFor="time">Hora</label>
+                    <label htmlFor="time">Lugar</label>
                     <select name="campus" id="campus">
                         <option value="mostoles">Móstoles</option>
                         <option value="fuenlabrada">Fuenlabrada</option>    
@@ -27,10 +27,6 @@ export default function Delivery({setScene}) {
                 </div>
                 <div className={scss.summary}>
                     <h2>Resumen</h2>
-                    <div className={scss.total}>
-                        <span>Total</span>
-                        <span>0€</span>
-                    </div>
                     <div className={scss.items}>
                         <span>Productos</span>
                         <ul>
@@ -39,6 +35,14 @@ export default function Delivery({setScene}) {
                             <li>Producto 3</li>
                         </ul>
                     </div>
+                    <div className={scss.total}>
+                        <span>Total</span>
+                        <span>0€</span>
+                    </div>
+                </div>
+                <div className={scss.input_group}>
+                    <label htmlFor="remember">Recordar datos de pago</label>
+                    <input type="checkbox" id="remember" />
                 </div>
             </div>
             <button onClick={handlePay}>Pagar</button>

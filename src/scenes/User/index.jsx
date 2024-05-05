@@ -29,17 +29,10 @@ export default function User({ setScene }) {
                     <span>Platos donados</span>
                     <span>0</span>
                 </div>
-                <div className={scss.items}>
-                    <span>Platos favoritos</span>
-                    <ol>
-                        <li>Producto 1</li>
-                        <li>Producto 2</li>
-                        <li>Producto 3</li>
-                    </ol>
-                </div>
             </div>
             <hr />
             <button onClick={() => setScene("faqs")}>Ayuda</button>
+            <button>Cambiar contraseña</button>
             <button onClick={() => setScene("login")}>Cerrar sesión</button>
         </div>
     );

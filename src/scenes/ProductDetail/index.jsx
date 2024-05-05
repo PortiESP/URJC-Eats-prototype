@@ -17,6 +17,9 @@ export default function ProductDetail({setScene}) {
                 <div className={scss.image}>
                     <img src="https://via.placeholder.com/300" alt="Product" />
                 </div>
+                <div className={scss.rating}>⭐⭐⭐⭐⭐
+                    <span>Toca para hacer tu valoración</span>
+                </div>
                 <div className={scss.details}>
                     <div>
                         <p className={scss.hint_title}>Ingredientes</p>
@@ -31,7 +34,7 @@ export default function ProductDetail({setScene}) {
                 </div>
             </div>
             <span className={scss.availability}>Disponibilidad: 99</span>
-            <button onClick={handleCart}>Añadir al carrito</button>
+            <button onClick={handleCart}>Añadir a Mi Menú</button>
         </div>
     )
 }
