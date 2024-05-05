@@ -79,6 +79,47 @@ const requirements = {
             description: "Los usuarios externos a la URJC podrán cambiar su contraseña directamente desde la aplicación."
         },
     ],
+    "cart": [
+        {
+            code: "RF-11",
+            title: "Permitir pagar los pedidos pendientes",
+            description: "La aplicación permitirá seleccionar los pedidos sin pagar y permitirá pagarlos. Los pedidos sin pagar quedan guardados como un \"borrador\" que el usuario podrá seguir editando y solo se formalizará en el momento del pago."
+        },
+    ],
+    "delivery": [
+        {
+            code: "RF-02",
+            title: "Seleccionar lugar y fecha de recogida",
+            description: "El usuario podrá seleccionar cuándo y dónde desea recoger su pedido."
+        },
+        {
+            code: "RF-03",
+            title: "Comunicarse con la pasarela de pago",
+            description: "La aplicación implementará un pago seguro usando una pasarela de pago certificada."
+        },
+        {
+            code: "RF-04",
+            title: "Recordar datos de pago RF-04",
+            description: "El usuario podrá seleccionar la franja horaria de entrega de su pedido."
+        },
+        {
+            code: "RF-11",
+            title: "Pagar pedidos pendientes",
+            description: "La aplicación permitirá seleccionar los pedidos sin pagar y permitirá pagarlos. Los pedidos sin pagar quedan guardados como un \"borrador\" que el usuario podrá seguir editando y solo se formalizará en el momento del pago."
+        },
+        {
+            code: "RF-17",
+            title: "Mostrar la disponibilidad del locker",
+            description: "Los usuarios tendrán la posibilidad de consultar la disponibilidad de los diferentes \"lockers\" situados en los campus URJC."
+        },
+    ],
+    "faqs": [
+        {
+            code: "RF-14",
+            title: "Mostrar una sección de preguntas frecuentes",
+            description: "En la aplicación habrá una sección de FAQs para facilitar que los nuevos usuarios pueden resolver sus dudas sobre el funcionamiento de la aplicación y utilizarla de forma satisfactoria."
+        },
+    ]
 }
 
 export default requirements;

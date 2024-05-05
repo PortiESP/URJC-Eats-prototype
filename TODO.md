@@ -1,5 +1,9 @@
 - user
   - Cambiar contraseña
-  - mis pedidos
 - prodDetail
   - valorar
+- cart
+  - mis pedidos anteriores
+  - donar
+- delivery
+  - recordar datos de pago
