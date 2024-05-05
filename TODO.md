@@ -1,4 +1,0 @@
-- cart
-  - mis pedidos anteriores
-    - anular pedido
-    - donar

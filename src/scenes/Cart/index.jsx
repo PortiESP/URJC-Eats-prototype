@@ -21,6 +21,11 @@ export default function Cart({setScene}) {
             }
             </div>
             <button onClick={handlePay} disabled={!cart.length}>Realizar pedido</button>
+            <h1>Pedidos anteriores</h1>
+            <PrevMenu />
+            <PrevMenu />
+            <PrevMenu />
+            <PrevMenu />
         </div>
     )
 }
@@ -35,6 +40,21 @@ function CartItem(props) {
             <div className={scss.details}>
                 <h3>{props.title}</h3>
                 <span>{props.price}€</span>
+            </div>
+        </div>
+    )
+}
+
+function PrevMenu(props) {
+    return (
+        <div className={scss.prev_menu}>
+            <div className={scss.details}>
+                <h4>Menu del 24/6 <span className={scss.label}>Pagado</span></h4>
+                <span>Campus fuenlabrada</span>
+            </div>
+            <div className={scss.buttons}>
+                <button>Donar</button>
+                <button>Anular</button>
             </div>
         </div>
     )
