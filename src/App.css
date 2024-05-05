@@ -64,18 +64,18 @@
             
             .app-frame-content{
                 width: 320px;
-                height: calc(700px - 30px);
+                height: calc(700px - 10px);
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: relative;
                 overflow: hidden;
-                border-radius: 50px;
+                border-radius: 70px;
 
                 .scene-wrapper{
                     display: flex;
-                    justify-content: center;
+                    justify-content:flex-start;
                     align-items: center;
                     width: 330px;
                     height: 710px;
@@ -84,7 +84,7 @@
 
                     .scene-content{
                         width: 100%;
-                        height: calc(100% - 90px - 40px);
+                        height: calc(100% - 78px - 40px);
                         padding: 20px;
                         margin-top: 40px;
                         position: relative;
@@ -107,6 +107,7 @@
                 object-fit: contain;
                 position: absolute;
                 pointer-events: none;
+                top: -12px;
             }
         }
     }
@@ -139,7 +140,7 @@
                     border-radius: 40px;
 
                     .scene-wrapper .scene-content{
-                        height: 620px;
+                        height: 630px;
                     }
                 }
 
@@ -165,12 +166,11 @@
             .app-frame-container{
                 .app-frame-content{
                     width: 310px;
-                    height: 650px;
-                    border-radius: 40px;
-
+                    height: 655px;
+                    border-radius: 50px;
                     
                     .scene-wrapper .scene-content{
-                        height: 560px;
+                        height: 590px;
                     }
                 }
 
