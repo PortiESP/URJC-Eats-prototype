@@ -1,9 +1,17 @@
+- iniciar sesion
+  - informar leyes
 - user
   - Cambiar contraseña
 - prodDetail
   - valorar
+  - valoraciones
 - cart
   - mis pedidos anteriores
-  - donar
+    - anular pedido
+    - donar
 - delivery
   - recordar datos de pago
+  
+- fit on screen
+  - scroll
+  - toggle

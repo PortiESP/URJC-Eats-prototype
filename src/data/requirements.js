@@ -6,14 +6,19 @@ const requirements = {
             description: "Los usuarios pertenecientes a la URJC podrán identificarse mediante sus credenciales URJC. Los usuarios externos a la URJC deberán poder registrarse mediante un correo y DNI. Al acceder por primera vez a su cuenta, deberán cambiar la contraseña obligatoriamente."
         },
         {
+            code: "RF-13",
+            title: "Informar sobre el cumplimiento de las leyes",
+            description: "Los usuarios deben de ser informados acerca del cumplimiento de las siguientes leyes involucradas: Ley Orgánica 15/1999 y Ley Orgánica 3/2018"
+        },
+        {
             code: "RF-24",
             title: "Seleccionar idioma",
             description: "Los usuarios de la aplicación tendrán la opción de elegir el idioma dentro de las opciones disponibles."
-        }
+        },
     ],
     "mainMenu": [
         {
-            code: "RF-05" ,
+            code: "RF-06" ,
             title: "Mostrar los platos disponibles",
             description: "En la aplicación se mostrarán los platos disponibles para elegir durante las próximas dos semanas junto a su información (tanto a los usuarios con sesión iniciada como sin ella)."
         },
@@ -59,7 +64,7 @@ const requirements = {
         {
             code: "RF-07",
             title: "Valorar plato",
-            description: "Un usuario podrá valorar un plato con una calificación de 1 a 5 estrellas. Para poder valorar un plato, la aplicación debe marcarlo como recogido."
+            description: "Un usuario podrá valorar un plato con una calificación de 1 a 5 estrellas. Para poder valorar un plato, la aplicación debe marcarlo como recogido. (Esta opción solo estará disponible para los usuarios que hayan recogido el plato)."
         },
         {
             code: "RF-18",
@@ -81,10 +86,35 @@ const requirements = {
     ],
     "cart": [
         {
+            code: "RF-08",
+            title: "Mostrar pedidos realizados",
+            description: "La aplicación mostrará los pedidos realizados en un plazo de dos semanas a cada usuario. Además, deberá mostrar un estado por cada pedido que haya solicitado el cliente."
+        },
+        {
             code: "RF-11",
             title: "Permitir pagar los pedidos pendientes",
             description: "La aplicación permitirá seleccionar los pedidos sin pagar y permitirá pagarlos. Los pedidos sin pagar quedan guardados como un \"borrador\" que el usuario podrá seguir editando y solo se formalizará en el momento del pago."
         },
+        {
+            code: "RF-15",
+            title: "Donar un plato",
+            description: "Los usuarios tendrán la opción de donar un plato en caso de que hayan reservado un plato y no puedan ir a recogerlo. El receptor del plato donado debe ser un usuario con cuenta en la aplicación, y será elegido por su correo electrónico."
+        },
+        {
+            code: "RF-16",
+            title: "Notificar el estado del pedido",
+            description: "La aplicación permitirá al usuario ver el estado actual de su pedido en todo momento. Así sabiendo si todavía no ha llegado, si se encuentra ya en el punto de recogida o si ya ha sido recogido."
+        },
+        {
+            code: "RF-19",
+            title: "Anular pedido",
+            description: "Los usuarios tendrán la posibilidad de anular parte o la totalidad de sus pedidos durante la semana de antes. Entendiéndose que el cambio de semana está fijado a las 23:59:59 del domingo."
+        },
+        {
+            code: "RF-25",
+            title: "Soliciar reembolso",
+            description: "Cuando se produce una cancelación de un pedido dentro de los plazos límite establecidos, se procede al reembolso del dinero al usuario."
+        }
     ],
     "delivery": [
         {
@@ -118,6 +148,13 @@ const requirements = {
             code: "RF-14",
             title: "Mostrar una sección de preguntas frecuentes",
             description: "En la aplicación habrá una sección de FAQs para facilitar que los nuevos usuarios pueden resolver sus dudas sobre el funcionamiento de la aplicación y utilizarla de forma satisfactoria."
+        },
+    ],
+    "pasMenu": [
+        {
+            code: "RF-20",
+            title: "Dar de alta a un usuario externo", 
+            description: "En el caso de los usuarios que no pertenezcan a la URJC, deberán ser dados por alta por un PAS con permisos de administrador."
         },
     ]
 }
