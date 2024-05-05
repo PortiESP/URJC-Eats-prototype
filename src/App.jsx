@@ -34,7 +34,7 @@ function App() {
       <div className="app-mid-container">
         <aside className="asideL">
           {
-            requirements[scene]?.map((requirement, index) => <Requirement key={index} requirement={requirement} />)
+            requirements[scene]?.map((requirement, index) => index % 2 === 0 && <Requirement key={index} requirement={requirement} />)
           }
         </aside>
         <div className='app-frame-container'>
@@ -43,7 +43,11 @@ function App() {
           </div>
           <img src={iphoneFrame} className='app-frame-image'/>
         </div>
-        <aside className="asideR"></aside>
+        <aside className="asideR">
+          {
+            requirements[scene]?.map((requirement, index) => index % 2 === 1 && <Requirement key={index} requirement={requirement} />)
+          }
+        </aside>
       </div>
       <div className="app-bottom-container">
         <img src={logo1} alt="MadridDevLogo"  width={150}/>
