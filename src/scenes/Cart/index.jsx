@@ -10,7 +10,7 @@ export default function Cart({setScene}) {
 
     return (
         <div className={scss.wrapper}>
-            <h1>Carrito</h1>
+            <h1>Mi menú</h1>
             <div className={scss.items}>
             {
                 cart.length 

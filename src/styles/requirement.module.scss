@@ -1,8 +1,7 @@
 .wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-start;
     max-width: 70%;
 
     h3{
@@ -17,7 +16,7 @@
     }
 
     p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #0008;
         font-weight: 500;
     }

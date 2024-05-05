@@ -1,0 +1,5 @@
+- user
+  - Cambiar contraseña
+  - mis pedidos
+- prodDetail
+  - valorar
