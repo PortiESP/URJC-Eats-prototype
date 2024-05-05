@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 
 function App() {
 
-  const [scene, setScene] = useState('user')
+  const [scene, setScene] = useState('login')
   
   useEffect(() => {
     const setVH = () => {
