@@ -12,7 +12,7 @@ export default function MainMenu({setScene}){
     return (
         <div className={scss.wrapper}>
             <div className={scss.title}>
-                <h1>Menú</h1>
+                <h1>Carta</h1>
             </div>
             <div className={scss.content}>
                 <div className={scss.search}>
