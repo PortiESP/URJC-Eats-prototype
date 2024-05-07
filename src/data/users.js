@@ -13,6 +13,11 @@ const users = [
         email: 'alumno@urjc.es',
         password: 'alumno',
         nextScene: 'mainMenu'
+    },
+    {
+        email: '00000000A',
+        password: 'externo',
+        nextScene: 'mainMenu'
     }
 ]
 

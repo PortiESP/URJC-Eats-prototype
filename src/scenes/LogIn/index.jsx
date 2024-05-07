@@ -38,7 +38,7 @@ export default function LogIn({setScene}){
             </div>
             <form className={scss.form}>
                 <div className={scss.formGroup}>
-                    <label htmlFor="email">Correo Electrónico</label>
+                    <label htmlFor="email">Correo Electrónico / DNI</label>
                     <input type="email" name="email" id="email" value={email} onChange={e => setEmail(e.target.value)} ref={$email}/>
                 </div>
                 <div className={scss.formGroup}>
