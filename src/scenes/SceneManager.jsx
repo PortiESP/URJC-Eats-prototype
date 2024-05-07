@@ -9,8 +9,10 @@ import User from "@/scenes/User"
 import FAQs from "@/scenes/User/FAQs"
 import Admin from "@/scenes/Admin"
 import PAS from "./PAS"
+import Welcome from "./Welcome"
 
 const scenes = {
+    welcome: Welcome,
     mainMenu: MainMenu,
     login: LogIn,
     productDetail: ProductDetail,
@@ -22,6 +24,8 @@ const scenes = {
     pasMenu: PAS
 }
 
+const notNavScenes = ['login', 'adminMenu', 'pasMenu', 'welcome']
+
 export default function SceneManager({ scene, setScene }) {
 
     const Scene = scenes[scene]
@@ -29,7 +33,7 @@ export default function SceneManager({ scene, setScene }) {
         <div className="scene-content">
             <Scene setScene={setScene} />
         </div>
-        {   scene !== 'login' && scene !== "adminMenu" && scene !== "pasMenu" &&
+        {   notNavScenes.includes(scene) === false &&
             <Nav setScene={setScene} />
         }
     </div>

@@ -7,9 +7,11 @@ import requirements from '@/data/requirements'
 import Requirement from './components/Requirement'
 import { useEffect } from 'react'
 
+const showWelcomeInitial = localStorage.getItem('first_time') === null ? true : false
+
 function App() {
 
-  const [scene, setScene] = useState('login')
+  const [scene, setScene] = useState(showWelcomeInitial ? 'welcome' : 'login')
   
   useEffect(() => {
     const setVH = () => {
@@ -53,7 +55,9 @@ function App() {
         <img src={logo1} alt="MadridDevLogo"  width={150}/>
         <span>© 2024 MadridDev</span>
       </div>
-
+      <div className='help-btn' onClick={()=> setScene("welcome")}>
+          <span>?</span>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,109 @@
+@import "../identity";
+
+.wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    
+    .info{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+
+        h1{
+            border-bottom: 2px solid $primary;
+        }
+
+        h3{
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-bottom: 1px solid #0002;
+        }
+
+        hr{
+            border: none;
+            border-bottom: 1px solid #0002;
+        }
+
+        button{
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: $primary;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+    
+            &:hover{
+                background-color: darken($primary, 10%);
+            }
+        }
+
+        img{
+            width: 80%;
+            margin: auto;
+        }
+
+        p{
+            font-weight: 600;
+
+            &.hint{
+                font-style: italic;
+                font-size: .9rem;
+                color: #0008;
+                text-align: center;
+            }
+
+            ul{
+                padding-top: 4px;
+
+                li{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 6px;
+                    font-size: .9rem;
+                    font-style: italic;
+                    
+                    a{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 6px;
+                        text-decoration: none;
+                        font-weight: 600;
+                        color: #000b;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &::before{
+                        content: '';
+                        display: inline-block;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background-color: #0002;
+                    }
+                    
+                    img{
+                        width: 18px;    
+                        height: 18px;
+
+                        // Gray
+                        filter: grayscale(100%);
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+
+    }
+}
