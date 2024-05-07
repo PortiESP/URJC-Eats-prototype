@@ -97,7 +97,8 @@
                     .scene-content{
                         width: 100%;
                         padding: 20px;
-                        margin-top: 40px;
+                        padding-top: 0;
+                        margin-top: 45px;
                         position: relative;
 
                         overflow: scroll;
@@ -212,14 +213,6 @@
                     width: 310px;
                     height: 655px;
                     border-radius: 40px;
-
-                    .scene-wrapper{
-                        height: 100%;
-
-                        .scene-content{
-                            margin-top: 45px;
-                        }
-                    }
                 }
 
 
@@ -240,19 +233,31 @@
                     width: 270px;
                     height: 575px;
                     border-radius: 40px;
-
-                    .scene-wrapper{
-                        height: 100%;
-
-                        .scene-content{
-                            margin-top: 45px;
-                        }
-                    }
                 }
 
 
                 & > img{
                     height: 600px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-height: 640px) {
+    .app-wrapper{
+        font-size: .75rem;
+        .app-mid-container{
+            .app-frame-container{
+                .app-frame-content{
+                    width: 255px;
+                    height: 525px;
+                    border-radius: 40px;
+                }
+
+
+                & > img{
+                    height: 550px;
                 }
             }
         }
