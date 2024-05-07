@@ -1,0 +1,2 @@
+- Cambiar contraseña del usuario externo
+  - La primera vez

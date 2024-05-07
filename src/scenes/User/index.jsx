@@ -4,7 +4,7 @@ export default function User({ setScene }) {
 
     return (
         <div className={scss.wrapper}>
-            <h1>User</h1>
+            <h1>Usuario</h1>
             <h2>Datos personales</h2>
             <div className={scss.details}>
                 <p>Name: <span>Pedro</span></p>
@@ -12,7 +12,7 @@ export default function User({ setScene }) {
                 <p>Rol: <span>Profesor</span></p>
             </div>
             <div className={scss.stats}>
-                <h2>Stats</h2>
+                <h2>Estadísticas</h2>
                 <div className={scss.stat}>
                     <span>Orders</span>
                     <span>7</span>
