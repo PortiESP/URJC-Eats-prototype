@@ -2,6 +2,11 @@ import scss from "@/styles/scenes_styles/delivery.module.scss";
 
 export default function Delivery({setScene}) {
 
+    const today = new Date();
+    const nextMonday = new Date(today);
+    nextMonday.setDate(today.getDate() + (1 + 7 - today.getDay()) % 7);
+    const formattedNextMonday = `${nextMonday.getFullYear()}-${String(nextMonday.getMonth() + 1).padStart(2, '0')}-${String(nextMonday.getDate()).padStart(2, '0')}`;
+
     const handlePay = () => {
         localStorage.setItem('cart', JSON.stringify([]));
         setScene('mainMenu')
@@ -13,7 +18,7 @@ export default function Delivery({setScene}) {
             <div className={scss.details}>
                 <div className={scss.input_date}>
                     <label htmlFor="date">Fecha</label>
-                    <input type="date" id="date" />
+                    <input type="date" id="date" min={formattedNextMonday}/>
                 </div>
                 <div className={scss.input_location}>
                     <label htmlFor="time">Lugar</label>

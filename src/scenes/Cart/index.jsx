@@ -54,7 +54,7 @@ function PrevMenu(props) {
     return (
         <div className={scss.prev_menu}>
             <div className={scss.details}>
-                <h4>Menu del {props.date} <span className={[scss.label, scss[props.status]].join(" ")}>{props.status}</span></h4>
+                <h4>Menú del {props.date} <span className={[scss.label, scss[props.status]].join(" ")}>{props.status}</span></h4>
                 <span>Campus {props.campus}</span>
             </div>
             {
