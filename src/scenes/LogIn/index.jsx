@@ -50,6 +50,7 @@ export default function LogIn({setScene}){
                     {error && <span className={scss.error}>{error && 'Usuario o contraseña incorrectos'}</span>}
                     <button type="submit">Acceder</button>
                     <button onClick={()=> setScene("mainMenu")}>Explorar sin identificarse</button>
+                    <button onClick={() => setScene("faqs")}>Ayuda</button>
                 </div>
             </form>
             <div className={scss.lang}>

@@ -26,7 +26,7 @@ const scenes = {
 }
 
 const notNavScenes = ['login', 'adminMenu', 'pasMenu', 'welcome']
-const allowedUnloggedScenes = ['login', 'welcome', 'mainMenu', 'productDetail']
+const allowedUnloggedScenes = ['login', 'welcome', 'mainMenu', 'productDetail', 'faqs']
 
 export default function SceneManager({ scene, setScene }) {
 
