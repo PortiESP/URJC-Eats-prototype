@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import users from '@/data/users';
 
 import urjc_eats_logo from '@/assets/urjc_eats.png';
+import { useEffect } from 'react';
 
 
 export default function LogIn({setScene}){
@@ -13,6 +14,10 @@ export default function LogIn({setScene}){
     const [error, setError] = useState(false);
     const $email = useRef();
     const $password = useRef();
+
+    useEffect(() => {
+        localStorage.removeItem('user');
+    }, []);
 
 
     const handleSubmit = (e) => {
@@ -49,8 +54,10 @@ export default function LogIn({setScene}){
                 <div className={scss.formGroup} onClick={handleSubmit}>
                     {error && <span className={scss.error}>{error && 'Usuario o contraseña incorrectos'}</span>}
                     <button type="submit">Acceder</button>
-                    <button onClick={()=> setScene("mainMenu")}>Explorar sin identificarse</button>
-                    <button onClick={() => setScene("faqs")}>Ayuda</button>
+                    <div className={scss.btn_group}>
+                        <button onClick={()=> setScene("mainMenu")}>Explorar sin identificarse</button>
+                        <button onClick={() => setScene("faqs")}>Ayuda</button>
+                    </div>
                 </div>
             </form>
             <div className={scss.lang}>
@@ -62,8 +69,6 @@ export default function LogIn({setScene}){
             <div className={scss.hint}>
                 <p>¿No tienes cuenta?</p>
                 <p>Contacta con un administrador</p>
-                <br/>
-                <p>Cumplimos con la Ley Orgánica 15/1999 y Ley Orgánica 3/2018</p>
             </div>
         </div>
     )
