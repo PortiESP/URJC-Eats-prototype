@@ -8,7 +8,7 @@ const requirements = {
     "login": [
         {
             title: "Usuarios",
-            description: "Puedes usar las siguientes credenciales para iniciar sesión en la aplicación: \"admin:admin\", \"user:user\", \"pas:pas\" o \"12345678Z:12345678Z\" "
+            description: "Puedes usar las siguientes credenciales para iniciar sesión en la aplicación: \"admin:admin\", \"alumno:alumno\", \"pas:pas\" o \"12345678Z:12345678Z\" "
         },
         {
             code: "RF-05",
