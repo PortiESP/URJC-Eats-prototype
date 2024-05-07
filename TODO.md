@@ -1,3 +1,2 @@
 - Cambiar contraseña del usuario externo
   - La primera vez
-- mirar platos sin registrar
