@@ -21,6 +21,7 @@ export default function LogIn({setScene}){
         const user = users.find(user => (user.email === email || user.email.split("@")[0] === email) && user.password === password);
 
         if(user){
+            localStorage.setItem('user', user.email);
             setScene(user.nextScene);
         } else {
             setError(true);
@@ -48,6 +49,7 @@ export default function LogIn({setScene}){
                 <div className={scss.formGroup} onClick={handleSubmit}>
                     {error && <span className={scss.error}>{error && 'Usuario o contraseña incorrectos'}</span>}
                     <button type="submit">Acceder</button>
+                    <button onClick={()=> setScene("mainMenu")}>Explorar sin identificarse</button>
                 </div>
             </form>
             <div className={scss.lang}>

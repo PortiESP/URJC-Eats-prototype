@@ -4,6 +4,12 @@ import scss from '@/styles/scenes_styles/product_detail.module.scss';
 export default function ProductDetail({setScene}) {
 
     const handleCart = () => {
+        // If the user is not logged in, redirect to the login scene
+        if(localStorage.getItem('user') === null){
+            setScene('login');
+            return;
+        }
+
         const cart = JSON.parse(localStorage.getItem('cart') || "[]");
         cart.push({name: 'Macarrones con tomate', price: '17'});
         localStorage.setItem('cart', JSON.stringify(cart));

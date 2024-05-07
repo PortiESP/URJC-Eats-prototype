@@ -2,6 +2,11 @@ import scss from '@/styles/scenes_styles/user.module.scss';
 
 export default function User({ setScene }) {
 
+    const handleSessionClose = () => {
+        localStorage.removeItem('user');
+        setScene("login");
+    }
+
     return (
         <div className={scss.wrapper}>
             <h1>Usuario</h1>
@@ -33,7 +38,7 @@ export default function User({ setScene }) {
             <hr />
             <button onClick={() => setScene("faqs")}>Ayuda</button>
             <button>Cambiar contraseña</button>
-            <button onClick={() => setScene("login")}>Cerrar sesión</button>
+            <button onClick={handleSessionClose}>Cerrar sesión</button>
         </div>
     );
 }
