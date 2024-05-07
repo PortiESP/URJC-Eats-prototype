@@ -12,9 +12,11 @@ import PAS from "./PAS"
 import Welcome from "./Welcome"
 import { useEffect } from "react"
 import Password from "./Password"
+import Law from "./Law"
 
 const scenes = {
     welcome: Welcome,
+    law: Law,
     mainMenu: MainMenu,
     login: LogIn,
     productDetail: ProductDetail,
@@ -28,7 +30,7 @@ const scenes = {
 }
 
 const notNavScenes = ['login', 'adminMenu', 'pasMenu', 'welcome']
-const allowedUnloggedScenes = ['login', 'welcome', 'mainMenu', 'productDetail', 'faqs']
+const allowedUnloggedScenes = ['login', 'welcome', 'mainMenu', 'productDetail', 'faqs', "law"]
 
 export default function SceneManager({ scene, setScene }) {
 
@@ -37,6 +39,7 @@ export default function SceneManager({ scene, setScene }) {
         if (localStorage.getItem('user') === null && allowedUnloggedScenes.includes(scene) === false){
             setScene("login")
         }
+        document.querySelector(".scene-content").scrollTo(0, 0)
     }, [scene])
 
     const Scene = scenes[scene]

@@ -8,10 +8,11 @@ import Requirement from './components/Requirement'
 import { useEffect } from 'react'
 
 const showWelcomeInitial = localStorage.getItem('first_time') === null ? true : false
+const DEFAULT_SCENE = "welcome"
 
 function App() {
 
-  const [scene, setScene] = useState(showWelcomeInitial ? 'welcome' : 'login')
+  const [scene, setScene] = useState(showWelcomeInitial ? DEFAULT_SCENE : 'login')
   
   useEffect(() => {
     const setVH = () => {

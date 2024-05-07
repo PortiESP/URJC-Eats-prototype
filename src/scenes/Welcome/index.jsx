@@ -26,10 +26,7 @@ export default function Welcome({setScene}) {
                     <p><em>Enlace al <a href="https://github.com/PortiESP/URJC-Eats-prototype" target='_blank'>repositorio del prototipo</a></em></p>
                     <p className={scss.hint}>Para empezar, pulsa el botón de abajo</p>
                     <hr/>
-                    <button onClick={() => {
-                        localStorage.setItem('first_time', false)
-                        setScene('login')
-                    }}>Empezar</button>
+                    <button onClick={() => setScene('law')}>Empezar</button>
                 </div>
         </div>
     </>)

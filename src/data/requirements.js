@@ -16,15 +16,17 @@ const requirements = {
             description: "Los usuarios pertenecientes a la URJC podrán identificarse mediante sus credenciales URJC. Los usuarios externos a la URJC deberán poder registrarse mediante un correo y DNI. Al acceder por primera vez a su cuenta, deberán cambiar la contraseña obligatoriamente."
         },
         {
-            code: "RF-13",
-            title: "Informar sobre el cumplimiento de las leyes",
-            description: "Los usuarios deben de ser informados acerca del cumplimiento de las siguientes leyes involucradas: Ley Orgánica 15/1999 y Ley Orgánica 3/2018"
-        },
-        {
             code: "RF-24",
             title: "Seleccionar idioma",
             description: "Los usuarios de la aplicación tendrán la opción de elegir el idioma dentro de las opciones disponibles."
         },
+    ],
+    "law": [
+        {
+            code: "RF-13",
+            title: "Informar sobre el cumplimiento de las leyes",
+            description: "Los usuarios deben de ser informados acerca del cumplimiento de las siguientes leyes involucradas: Ley Orgánica 15/1999 y Ley Orgánica 3/2018"
+        }
     ],
     "mainMenu": [
         {
