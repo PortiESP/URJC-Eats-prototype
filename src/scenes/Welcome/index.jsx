@@ -17,7 +17,7 @@ export default function Welcome({setScene}) {
                         <ul>
                             <li><a href="https://www.linkedin.com/in/porti/">Jaime Portillo <img src={linkedin} alt='Linkedin logo'></img></a></li>
                             <li><a href="https://www.linkedin.com/in/cub1z/">Diego Sanchez <img src={linkedin} alt='Linkedin logo'></img></a></li>
-                            <li><a href="">Marcos García <img src={linkedin} alt='Linkedin logo'></img></a></li>
+                            <li>Marcos García</li>
                             <li><a href="https://www.linkedin.com/in/danisantos15/">Daniel Santos <img src={linkedin} alt='Linkedin logo'></img></a></li>
                         </ul>
 
