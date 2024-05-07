@@ -20,6 +20,7 @@ export default function FAQs({ setScene }) {
                 <h2>¿Cómo puedo ver mi historial de pedidos?</h2>
                 <p>Para ver tu historial de pedidos, ve a la sección de "Pedidos" y selecciona la opción "Historial de pedidos".</p>
             </div>
+            <button onClick={()=> setScene("login")}>Atrás</button>
         </div>
     );
 }

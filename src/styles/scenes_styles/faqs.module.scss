@@ -25,4 +25,17 @@
         }
 
     }
+
+    button{
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: $primary;
+        color: #fff;
+        font-size: 1em;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 10px;
+    }
 }
