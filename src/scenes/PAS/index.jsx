@@ -19,9 +19,9 @@ export default function PAS({setScene}) {
                     <input type="password" name="pass" id="pass" />
                 </div>
 
+                <button>Registrar</button>
                 <hr />
 
-                <button>Registrar</button>
                 <button onClick={() => setScene("login")}>Cerrar sesión</button>
             </div>
         </div>

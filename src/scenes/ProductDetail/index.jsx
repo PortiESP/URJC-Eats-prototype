@@ -13,7 +13,7 @@ export default function ProductDetail({setScene}) {
     return (
         <div className={scss.wrapper}>
             <div className={scss.details_container}>
-                <h2>Product Title</h2>
+                <h2>Macarrones con queso</h2>
                 <div className={scss.image}>
                     <img src="https://via.placeholder.com/300" alt="Product" />
                 </div>
@@ -23,7 +23,7 @@ export default function ProductDetail({setScene}) {
                 <div className={scss.details}>
                     <div>
                         <p className={scss.hint_title}>Ingredientes</p>
-                        <p className={scss.hint_data}>Sal, azúcar, agua, harina, etc.</p>
+                        <p className={scss.hint_data}>Pasta, tomate frito, orégano, queso rallado, sal, aceite.</p>
                     </div>
                     <div>
                         <p className={scss.hint_title}>Alergenos</p>
@@ -33,8 +33,9 @@ export default function ProductDetail({setScene}) {
                     <p>Precio: Product Price</p>
                 </div>
             </div>
-            <span className={scss.availability}>Disponibilidad: 99</span>
-            <button onClick={handleCart}>Añadir a Mi Menú</button>
+            <button onClick={handleCart}>Añadir a Mi Menú
+                <span className={scss.availability}>Disponibilidad: 99</span>
+            </button>
         </div>
     )
 }

@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     h1{
         font-size: 30px;
@@ -16,10 +16,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         width: 100%;
-        border-radius: 10px;
         overflow: scroll;
+        margin-bottom: 10px;
 
         // Disables the scrollbar
         scrollbar-width: none;
@@ -27,6 +27,7 @@
         h2{
             font-size: 30px;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         .image{
@@ -66,6 +67,9 @@
             width: 100%;
             border-radius: 10px;
 
+            background: #0001;
+            padding: 10px;
+
             .hint_title{
                 font-size: 18px;
                 font-weight: 600;
@@ -76,13 +80,12 @@
         
     }
     
-    .availability{
-        font-style: italic;
-        color: #0008;
-        font-weight: 400;
-    }
-
+    
     button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: 50px;
         background-color: $primary;
@@ -92,9 +95,21 @@
         font-size: 20px;
         cursor: pointer;
         transition: 0.3s;
-
+        padding: 5px;
+        padding-bottom: 20px;
+        
         &:hover{
-            filter: brightness(1.1);
+            background-color: $primary_dark;
+        }
+
+        .availability{
+            font-style: italic;
+            color: #fff8;
+            font-weight: 400;
+            font-size: .8rem;
+            padding-bottom: 5px;
+            position: absolute;
+            bottom: 20px;
         }
     }
 }
