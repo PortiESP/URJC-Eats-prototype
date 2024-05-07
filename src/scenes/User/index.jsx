@@ -36,7 +36,7 @@ export default function User({ setScene }) {
                 </div>
             </div>
             <hr />
-            <button>Cambiar contraseña</button>
+            <button onClick={()=> setScene("password")}>Cambiar contraseña</button>
             <button onClick={handleSessionClose}>Cerrar sesión</button>
         </div>
     );

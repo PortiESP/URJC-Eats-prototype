@@ -166,6 +166,13 @@ const requirements = {
             title: "Dar de alta a un usuario externo", 
             description: "En el caso de los usuarios que no pertenezcan a la URJC, deberán ser dados por alta por un PAS con permisos de administrador."
         },
+    ],
+    "password": [
+        {
+            code: "RF-26",
+            title: "Cambiar contraseña",
+            description: "Los usuarios externos a la URJC podrán cambiar su contraseña directamente desde la aplicación."
+        }
     ]
 }
 

@@ -11,6 +11,7 @@ import Admin from "@/scenes/Admin"
 import PAS from "./PAS"
 import Welcome from "./Welcome"
 import { useEffect } from "react"
+import Password from "./Password"
 
 const scenes = {
     welcome: Welcome,
@@ -22,7 +23,8 @@ const scenes = {
     user: User,
     faqs: FAQs,
     adminMenu: Admin,
-    pasMenu: PAS
+    pasMenu: PAS,
+    password: Password
 }
 
 const notNavScenes = ['login', 'adminMenu', 'pasMenu', 'welcome']

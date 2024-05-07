@@ -17,7 +17,7 @@ const users = [
     {
         email: '12345678Z',
         password: '12345678Z',
-        nextScene: 'mainMenu'
+        nextScene: 'password'
     }
 ]
 
