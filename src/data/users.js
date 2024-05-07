@@ -15,8 +15,8 @@ const users = [
         nextScene: 'mainMenu'
     },
     {
-        email: '00000000A',
-        password: 'externo',
+        email: '12345678Z',
+        password: '12345678Z',
         nextScene: 'mainMenu'
     }
 ]

@@ -38,6 +38,7 @@
             cursor: pointer;
             transition: background-color 0.3s;
             width: 100%;
+            margin-bottom: 10px ;
     
             &:hover{
                 background-color: darken($primary, 10%);

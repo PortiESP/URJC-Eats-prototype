@@ -1,11 +1,15 @@
 const requirements = {
     "welcome": [
         {
-            title: "Esto es un prototipo, no una aplicación real",
+            title: "ℹ️ Esto es un prototipo, no una aplicación real",
             description: "Este prototipo ha sido creado con el fin de mostrar una posible aplicación de gestión de pedidos de comida para la URJC. No se trata de una aplicación real, por lo que la mayoría de las funcionalidades no están implementadas, y la información mostrada es ficticia. El objetivo de este prototipo es mostrar cómo podría ser la aplicación final, y recoger feedback del cliente y validar los requisitos para poder realizar los cambios necesarios antes de comenzar con el desarrollo de la aplicación real."
         }
     ],
     "login": [
+        {
+            title: "Usuarios",
+            description: "Puedes usar las siguientes credenciales para iniciar sesión en la aplicación: \"admin:admin\", \"user:user\", \"pas:pas\" o \"12345678Z:12345678Z\" "
+        },
         {
             code: "RF-05",
             title: "Iniciar sesión",
