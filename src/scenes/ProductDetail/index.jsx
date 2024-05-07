@@ -13,6 +13,7 @@ export default function ProductDetail({setScene}) {
     return (
         <div className={scss.wrapper}>
             <div className={scss.details_container}>
+                <h1>Producto</h1>
                 <h2>Macarrones con queso</h2>
                 <div className={scss.image}>
                     <img src="https://via.placeholder.com/300" alt="Product" />

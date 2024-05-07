@@ -8,7 +8,7 @@
     width: 100%;
     
     .title{
-        margin-bottom: 1rem;
+        margin-bottom: 1em;
         border-bottom: 2px solid $primary;
         width: 100%;
         position: relative;
@@ -28,7 +28,7 @@
         }
         
         h1{
-            font-size: 1.5rem;
+            font-size: 1.5em;
             text-align: center;
         }
     }
@@ -47,16 +47,16 @@
             margin-bottom: 10px;
 
             label{
-                font-size: 1rem;
-                margin-bottom: 0.5rem;
+                font-size: 1em;
+                margin-bottom: 0.5em;
                 font-weight: 500;
                 pointer-events: none;
             }
 
             input{
                 width: 100%;
-                padding: 0.5rem;
-                font-size: 1rem;
+                padding: 0.5em;
+                font-size: 1em;
                 background-color: $secondary;
                 border: none;
                 border-radius: 5px;
@@ -71,7 +71,7 @@
             }
 
             .error{
-                font-size: 0.8rem;
+                font-size: 0.8em;
                 color: red;
                 margin: 4px;
                 text-align: center;
@@ -80,8 +80,8 @@
 
             button{
                 width: 100%;
-                padding: 0.5rem;
-                font-size: 1rem;
+                padding: 0.5em;
+                font-size: 1em;
                 background-color: $primary;
                 color: #fff;
                 border: none;
@@ -110,8 +110,8 @@
         margin: 10px;
 
         select{
-            padding: 0.5rem;
-            font-size: 1rem;
+            padding: 0.5em;
+            font-size: 1em;
             background-color: $secondary;
             border: none;
             border-radius: 5px;
@@ -125,8 +125,8 @@
     }
 
     .hint{
-        font-size: 0.8rem;
-        margin-top: 1rem;
+        font-size: 0.8em;
+        margin-top: 1em;
         color: #000;
         text-align: center;
         font-style: italic;

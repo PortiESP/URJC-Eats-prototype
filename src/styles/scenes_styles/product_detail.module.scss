@@ -8,8 +8,10 @@
     justify-content: flex-start;
 
     h1{
-        font-size: 30px;
+        font-size: 2em;
         margin-bottom: 20px;
+        border-bottom: 2px solid $primary;
+        width: 100%;
     }
 
     .details_container{
@@ -25,7 +27,7 @@
         scrollbar-width: none;
 
         h2{
-            font-size: 30px;
+            font-size: 1.5em;
             margin-bottom: 20px;
             text-align: center;
         }
@@ -51,7 +53,7 @@
             padding: 5px 0;
             
             span{
-                font-size: 12px;
+                font-size: .8em;
                 font-weight: 400;
                 font-style: italic;
                 display: block;
@@ -69,9 +71,10 @@
 
             background: #0001;
             padding: 10px;
+            font-size: 1em;
 
             .hint_title{
-                font-size: 18px;
+                font-size: 1.1em;
                 font-weight: 600;
                 text-decoration: underline;
             }
@@ -97,6 +100,7 @@
         transition: 0.3s;
         padding: 5px;
         padding-bottom: 20px;
+        font-size: 1.4em;
         
         &:hover{
             background-color: $primary_dark;
@@ -106,7 +110,7 @@
             font-style: italic;
             color: #fff8;
             font-weight: 400;
-            font-size: .8rem;
+            font-size: .6em;
             padding-bottom: 5px;
             position: absolute;
             bottom: 20px;
