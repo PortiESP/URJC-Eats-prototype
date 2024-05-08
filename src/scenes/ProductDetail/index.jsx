@@ -33,7 +33,7 @@ export default function ProductDetail({setScene}) {
                         <p className={scss.hint_data}>Pasta, tomate frito, orégano, queso rallado, sal, aceite.</p>
                     </div>
                     <div>
-                        <p className={scss.hint_title}>Alergenos</p>
+                        <p className={scss.hint_title}>Alérgenos</p>
                         <p className={scss.hint_data}>Gluten, lactosa, etc.</p>
                     </div>
 

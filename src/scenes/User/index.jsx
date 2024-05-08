@@ -13,8 +13,8 @@ export default function User({ setScene }) {
             <h2>Datos personales</h2>
             <div className={scss.details}>
                 <p>Nombre: <span>Pedro</span></p>
-                <p>Email: <span>pedro@urjc.es</span></p>
-                <p>Rol: <span>Profesor</span></p>
+                <p>Email: <span>pedro@alumnos.urjc.es</span></p>
+                <p>Rol: <span>Alumno</span></p>
             </div>
             <div className={scss.stats}>
                 <h2>Estadísticas</h2>
