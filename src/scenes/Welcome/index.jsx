@@ -10,7 +10,7 @@ export default function Welcome({setScene}) {
                 <div className={scss.info}>
                     <h1>Bienvenido al prototipo del proyecto URJC Eats</h1>
                     <h3>¿Qué es esto?</h3>
-                    <p>Este prototipo ha sido desarrollado por el equipo de <strong>MadridDev</strong> para la asignatura de <em>Arquitectura e Ingeniería de Requisitos</em> de la URJC</p>
+                    <p>Este prototipo ha sido desarrollado por el equipo de <strong>MadridDev</strong> para la asignatura de <em>Análisis e Ingeniería de Requisitos</em> de la URJC</p>
                     <img src={logo} alt="MadridDev logo" />
                     <div>
                         <p>Miembros del equipo</p>
